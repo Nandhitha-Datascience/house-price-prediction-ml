@@ -1,46 +1,58 @@
-# House Price Prediction using Machine Learning
+# 🏡 House Price Prediction using Machine Learning
 
-## Project Overview
-This project aims to predict house prices based on various features such as area, number of bedrooms, bathrooms, location, and other factors.
-
-## Technologies Used
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
+## Objective
+The goal of this project is to predict house prices based on key features such as living area, quality, and other property characteristics using machine learning techniques.
 
 ## Dataset
-The dataset contains information about houses including:
-- Area
-- Bedrooms
-- Bathrooms
-- Floors
-- Year Built
-- Location
-- Condition
-- Garage
-- Price (Target Variable)
+The dataset contains information about residential properties, including:
+- Living Area (GrLivArea)
+- Overall Quality (OverallQual)
+- Garage Capacity (GarageCars)
+- Basement Area (TotalBsmtSF)
+- Year Built (YearBuilt)
+- Sale Price (Target Variable)
 
-## Steps Performed
-1. Data Cleaning and Preprocessing
-2. Handling categorical variables using one-hot encoding
-3. Feature selection
-4. Train-test split
-5. Model training using:
-   - Linear Regression
-   - Decision Tree Regressor
-6. Model evaluation using R² score
+## Data Preprocessing
+- Handled missing values using median imputation  
+- Converted and cleaned data formats  
+- Applied **log transformation** to reduce skewness in target variable  
+- Performed **feature scaling** using StandardScaler  
 
-## Results
-- Compared multiple models to evaluate performance
-- Identified important features affecting house prices
+## Model Building
+The following models were implemented and compared:
+- Linear Regression  
+- Decision Tree Regressor  
+- Random Forest Regressor  
+
+## Model Performance
+
+| Model              | R² Score|
+|------------------- |---------|
+| Linear Regression  | 0.83    |
+| Decision Tree      | 0.77   |
+| Random Forest      | 0.84   |
+
+Linear Regression & Random Forest performed the best for this dataset.
+
+## Visualization
+### Actual vs Predicted Prices
+This plot compares actual house prices with predicted values.
+
+Key Insights:
+- Most predictions are close to actual values  
+- Model performs well for mid-range prices  
+- Some deviation exists for extreme values  
+
+## Key Insights
+- Overall quality and living area are strong predictors of house price  
+- Proper preprocessing significantly improves model performance  
+- Simpler models like Linear Regression can perform well with the right features  
 
 ## Conclusion
-The project demonstrates how machine learning can be used to predict house prices and analyze key influencing factors.
+This project demonstrates how data preprocessing and feature selection can improve model accuracy and help build reliable prediction systems.
 
-## Future Improvements
-- Use advanced models like Random Forest
-- Hyperparameter tuning
-- Improve dataset size for better accuracy
-
+## Tools & Technologies
+- Python  
+- Pandas, NumPy  
+- Matplotlib, Seaborn  
+- Scikit-learn  
