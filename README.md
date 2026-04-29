@@ -28,11 +28,11 @@ The following models were implemented and compared:
 
 | Model              | R² Score|
 |------------------- |---------|
+| Random Forest      | 0.84    |
 | Linear Regression  | 0.83    |
-| Decision Tree      | 0.77   |
-| Random Forest      | 0.84   |
+| Decision Tree      | 0.77    |
 
-Linear Regression & Random Forest performed the best for this dataset.
+Random Forest achieved the best performance, indicating that ensemble methods can better capture complex relationships in the data compared to simpler models.
 
 ## Visualization
 ### Actual vs Predicted Prices
